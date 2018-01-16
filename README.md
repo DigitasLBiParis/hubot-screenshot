@@ -1,8 +1,12 @@
 # hubot-screenshot
 
-A hubot script that takes a screenshot with pageres and posts to Slack
+A hubot script that takes a screenshot with selenium and posts to Slack
 
 See [`src/screenshot.coffee`](src/screenshot.coffee) for full documentation.
+
+Use env variable in order to set selenium preferences, i.e.:
+   SELENIUM_REMOTE_URL (The selenium grid url)
+   SELENIUM_BROWSER (chrome firefox ..)
 
 This script writes result screenshots to the disk. This script will not work on Heroku. Hubot should have permission
 to write to the directory where it is installed.
